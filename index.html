@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maxs and Brads Pong</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-wrapper">
+      <div id="startScreen" class="screen active">
+        <h1>Maxs and Brads Pong</h1>
+        <div class="start-content">
+          <p class="game-description">A Classic Game</p>
+          <button id="startBtn" class="start-button">PLAY</button>
+          <div class="controls-info">
+            <p><strong>Controls:</strong></p>
+            <p>🖱️ Mouse: Move paddle</p>
+            <p>⬆️⬇️ Arrow Keys: Move paddle</p>
+            <p>First to 10 wins!</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="gameScreen" class="screen">
+        <h1>Maxs and Brads Pong</h1>
+        <div class="scoreboard">
+          <div class="score" id="leftScore">0</div>
+          <div class="score-divider">:</div>
+          <div class="score" id="rightScore">0</div>
+        </div>
+        <canvas id="gameCanvas" width="800" height="500"></canvas>
+      </div>
+
+      <div id="gameOverScreen" class="screen">
+        <h1>GAME OVER</h1>
+        <div class="game-over-content">
+          <p id="winnerText" class="winner-text"></p>
+          <div class="final-score">
+            <span id="finalLeftScore">0</span>
+            <span>-</span>
+            <span id="finalRightScore">0</span>
+          </div>
+          <button id="restartBtn" class="start-button">PLAY AGAIN</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
